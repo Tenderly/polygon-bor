@@ -26,9 +26,9 @@ import (
 	"net"
 	"sync"
 
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/enr"
+	"github.com/tenderly/polygon-bor/crypto"
+	"github.com/tenderly/polygon-bor/p2p/enode"
+	"github.com/tenderly/polygon-bor/p2p/enr"
 	"golang.org/x/exp/slices"
 )
 

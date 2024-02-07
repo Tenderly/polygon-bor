@@ -26,12 +26,12 @@ import (
 	"time"
 
 	"github.com/dop251/goja"
-	"github.com/ethereum/go-ethereum/accounts/scwallet"
-	"github.com/ethereum/go-ethereum/accounts/usbwallet"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/console/prompt"
-	"github.com/ethereum/go-ethereum/internal/jsre"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/tenderly/polygon-bor/accounts/scwallet"
+	"github.com/tenderly/polygon-bor/accounts/usbwallet"
+	"github.com/tenderly/polygon-bor/common/hexutil"
+	"github.com/tenderly/polygon-bor/console/prompt"
+	"github.com/tenderly/polygon-bor/internal/jsre"
+	"github.com/tenderly/polygon-bor/rpc"
 )
 
 // bridge is a collection of JavaScript utility methods to bride the .js runtime

@@ -22,8 +22,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/metrics/internal"
+	"github.com/tenderly/polygon-bor/metrics"
+	"github.com/tenderly/polygon-bor/metrics/internal"
 )
 
 func TestMain(m *testing.M) {

@@ -34,12 +34,12 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/ethereum/go-ethereum/internal/reexec"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/tenderly/polygon-bor/internal/reexec"
+	"github.com/tenderly/polygon-bor/log"
+	"github.com/tenderly/polygon-bor/node"
+	"github.com/tenderly/polygon-bor/p2p"
+	"github.com/tenderly/polygon-bor/p2p/enode"
+	"github.com/tenderly/polygon-bor/rpc"
 	"github.com/gorilla/websocket"
 	"golang.org/x/exp/slog"
 )

@@ -22,8 +22,8 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/internal/version"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/tenderly/polygon-bor/internal/version"
+	"github.com/tenderly/polygon-bor/params"
 	"github.com/urfave/cli/v2"
 )
 
