@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/params/forks"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/params/forks"
 )
 
 // Genesis hashes to enforce below configs on.

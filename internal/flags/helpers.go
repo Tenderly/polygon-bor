@@ -23,9 +23,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/internal/version"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/tenderly/polygon-bor/internal/version"
+	"github.com/tenderly/polygon-bor/log"
+	"github.com/tenderly/polygon-bor/params"
 	"github.com/mattn/go-isatty"
 	"github.com/urfave/cli/v2"
 )

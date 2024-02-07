@@ -21,10 +21,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/beacon/params"
-	"github.com/ethereum/go-ethereum/beacon/types"
-	"github.com/ethereum/go-ethereum/common/mclock"
-	"github.com/ethereum/go-ethereum/ethdb/memorydb"
+	"github.com/tenderly/polygon-bor/beacon/params"
+	"github.com/tenderly/polygon-bor/beacon/types"
+	"github.com/tenderly/polygon-bor/common/mclock"
+	"github.com/tenderly/polygon-bor/ethdb/memorydb"
 )
 
 var (
