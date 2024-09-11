@@ -319,6 +319,8 @@ type ChainConfig struct {
 	PragueTime   *uint64 `json:"pragueTime,omitempty"`   // Prague switch time (nil = no fork, 0 = already on prague)
 	VerkleTime   *uint64 `json:"verkleTime,omitempty"`   // Verkle switch time (nil = no fork, 0 = already on verkle)
 
+	AhmedabadBlock *big.Int `json:"ahmedabadBlock,omitempty"` // Ahmedabad switch block (nil = no fork, 0 = already on ahmedabad)
+
 	// TerminalTotalDifficulty is the amount of total difficulty reached by
 	// the network that triggers the consensus upgrade.
 	TerminalTotalDifficulty *big.Int `json:"terminalTotalDifficulty,omitempty"`
@@ -542,6 +544,10 @@ func (c *ChainConfig) IsPrague(num *big.Int, time uint64) bool {
 // IsVerkle returns whether num is either equal to the Verkle fork time or greater.
 func (c *ChainConfig) IsVerkle(num *big.Int, time uint64) bool {
 	return c.IsLondon(num) && isTimestampForked(c.VerkleTime, time)
+}
+
+func (c *ChainConfig) IsAhmedabad(number *big.Int) bool {
+	return isBlockForked(c.AhmedabadBlock, number)
 }
 
 // CheckCompatible checks whether scheduled fork transitions have been imported
