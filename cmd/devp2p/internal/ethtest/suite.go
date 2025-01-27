@@ -21,6 +21,7 @@ import (
 	"math/big"
 	"reflect"
 
+	"github.com/holiman/uint256"
 	"github.com/tenderly/polygon-bor/common"
 	"github.com/tenderly/polygon-bor/consensus/misc/eip4844"
 	"github.com/tenderly/polygon-bor/core/types"
@@ -30,7 +31,6 @@ import (
 	"github.com/tenderly/polygon-bor/internal/utesting"
 	"github.com/tenderly/polygon-bor/p2p"
 	"github.com/tenderly/polygon-bor/p2p/enode"
-	"github.com/holiman/uint256"
 )
 
 // Suite represents a structure used to test a node's conformance
@@ -746,8 +746,8 @@ func makeSidecar(data ...byte) *types.BlobTxSidecar {
 	)
 	for i := range blobs {
 		blobs[i][0] = data[i]
-		c, _ := kzg4844.BlobToCommitment(blobs[i])
-		p, _ := kzg4844.ComputeBlobProof(blobs[i], c)
+		c, _ := kzg4844.BlobToCommitment(&blobs[i])
+		p, _ := kzg4844.ComputeBlobProof(&blobs[i], c)
 		commitments = append(commitments, c)
 		proofs = append(proofs, p)
 	}

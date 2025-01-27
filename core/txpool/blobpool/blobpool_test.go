@@ -29,6 +29,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/holiman/billy"
+	"github.com/holiman/uint256"
 	"github.com/tenderly/polygon-bor/common"
 	"github.com/tenderly/polygon-bor/consensus/misc/eip1559"
 	"github.com/tenderly/polygon-bor/consensus/misc/eip4844"
@@ -43,14 +45,12 @@ import (
 	"github.com/tenderly/polygon-bor/log"
 	"github.com/tenderly/polygon-bor/params"
 	"github.com/tenderly/polygon-bor/rlp"
-	"github.com/holiman/billy"
-	"github.com/holiman/uint256"
 )
 
 var (
 	emptyBlob          = kzg4844.Blob{}
-	emptyBlobCommit, _ = kzg4844.BlobToCommitment(emptyBlob)
-	emptyBlobProof, _  = kzg4844.ComputeBlobProof(emptyBlob, emptyBlobCommit)
+	emptyBlobCommit, _ = kzg4844.BlobToCommitment(&emptyBlob)
+	emptyBlobProof, _  = kzg4844.ComputeBlobProof(&emptyBlob, emptyBlobCommit)
 	emptyBlobVHash     = blobHash(emptyBlobCommit)
 )
 
