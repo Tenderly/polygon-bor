@@ -526,10 +526,15 @@ func (evm *EVM) initNewContract(contract *Contract, address common.Address) ([]b
 	}
 
 	// Check whether the max code size has been exceeded, assign err if the case.
-	if evm.chainRules.IsEIP158 && len(ret) > params.MaxCodeSize {
-		return ret, ErrMaxCodeSizeExceeded
+	if evm.chainRules.IsEIP158 {
+		if evm.chainConfig != nil && evm.chainConfig.IsAhmedabad(evm.Context.BlockNumber) {
+			if len(ret) > params.MaxCodeSizePostAhmedabad {
+				err = ErrMaxCodeSizeExceeded
+			}
+		} else if len(ret) > params.MaxCodeSize {
+			err = ErrMaxCodeSizeExceeded
+		}
 	}
-
 	// Reject code starting with 0xEF if EIP-3541 is enabled.
 	if len(ret) >= 1 && ret[0] == 0xEF && evm.chainRules.IsLondon {
 		return ret, ErrInvalidCode
