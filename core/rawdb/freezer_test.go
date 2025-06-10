@@ -25,10 +25,10 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/core/rawdb/ancienttest"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/rlp"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/polygon-bor/core/rawdb/ancienttest"
+	"github.com/tenderly/polygon-bor/ethdb"
+	"github.com/tenderly/polygon-bor/rlp"
 )
 
 var freezerTestTableDef = map[string]freezerTableConfig{"test": {noSnappy: true}}

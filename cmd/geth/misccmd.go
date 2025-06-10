@@ -22,7 +22,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/internal/version"
+	"github.com/tenderly/polygon-bor/internal/version"
 	"github.com/urfave/cli/v2"
 )
 

@@ -27,8 +27,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/polygon-bor/common"
 )
 
 func BenchmarkUnpack(b *testing.B) {

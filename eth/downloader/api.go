@@ -21,10 +21,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/tenderly/polygon-bor"
+	"github.com/tenderly/polygon-bor/core"
+	"github.com/tenderly/polygon-bor/event"
+	"github.com/tenderly/polygon-bor/rpc"
 )
 
 // DownloaderAPI provides an API which gives information about the current

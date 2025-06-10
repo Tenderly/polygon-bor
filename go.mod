@@ -1,4 +1,4 @@
-module github.com/ethereum/go-ethereum
+module github.com/tenderly/polygon-bor
 
 go 1.23.0
 

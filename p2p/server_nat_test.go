@@ -23,9 +23,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common/mclock"
-	"github.com/ethereum/go-ethereum/internal/testlog"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/tenderly/polygon-bor/common/mclock"
+	"github.com/tenderly/polygon-bor/internal/testlog"
+	"github.com/tenderly/polygon-bor/log"
 )
 
 func TestServerPortMapping(t *testing.T) {

@@ -25,14 +25,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/console/prompt"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/eth/ethconfig"
-	"github.com/ethereum/go-ethereum/internal/jsre"
-	"github.com/ethereum/go-ethereum/miner"
-	"github.com/ethereum/go-ethereum/node"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/console/prompt"
+	"github.com/tenderly/polygon-bor/core"
+	"github.com/tenderly/polygon-bor/eth"
+	"github.com/tenderly/polygon-bor/eth/ethconfig"
+	"github.com/tenderly/polygon-bor/internal/jsre"
+	"github.com/tenderly/polygon-bor/miner"
+	"github.com/tenderly/polygon-bor/node"
 )
 
 const (

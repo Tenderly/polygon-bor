@@ -21,8 +21,8 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/event"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/event"
 )
 
 // managerSubBufferSize determines how many incoming wallet events
