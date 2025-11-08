@@ -469,6 +469,7 @@ type ChainConfig struct {
 	VerkleTime    *uint64 `json:"verkleTime,omitempty"`    // Verkle switch time (nil = no fork, 0 = already on verkle)
 
 	AhmedabadBlock *big.Int `json:"ahmedabadBlock,omitempty"` // Ahmedabad switch block (nil = no fork, 0 = already on ahmedabad)
+	MadhugiriBlock *big.Int `json:"madhugiriBlock"`           // Madhugiri switch block (nil = no fork, 0 = already on madhugiri)
 
 	// TerminalTotalDifficulty is the amount of total difficulty reached by
 	// the network that triggers the consensus upgrade.
@@ -875,6 +876,10 @@ func (c *ChainConfig) IsVerkle(num *big.Int, time uint64) bool {
 
 func (c *ChainConfig) IsAhmedabad(number *big.Int) bool {
 	return isBlockForked(c.AhmedabadBlock, number)
+}
+
+func (c *ChainConfig) IsMadhugiri(number *big.Int) bool {
+	return isBlockForked(c.MadhugiriBlock, number)
 }
 
 // IsVerkleGenesis checks whether the verkle fork is activated at the genesis block.
@@ -1387,7 +1392,7 @@ type Rules struct {
 	IsByzantium, IsConstantinople, IsPetersburg, IsIstanbul bool
 	IsBerlin, IsLondon                                      bool
 	IsMerge, IsShanghai, IsCancun, IsPrague, IsOsaka        bool
-	IsAmsterdam, IsVerkle                                   bool
+	IsMadhugiri, IsAmsterdam, IsVerkle                      bool
 }
 
 // Rules ensures c's ChainID is not nil.
@@ -1417,6 +1422,7 @@ func (c *ChainConfig) Rules(num *big.Int, isMerge bool, timestamp uint64) Rules 
 		IsCancun:         isMerge && c.IsCancun(num, timestamp),
 		IsPrague:         isMerge && c.IsPrague(num, timestamp),
 		IsOsaka:          isMerge && c.IsOsaka(num, timestamp),
+		IsMadhugiri:      isMerge && c.IsMadhugiri(num),
 		IsAmsterdam:      isMerge && c.IsAmsterdam(num, timestamp),
 		IsVerkle:         isVerkle,
 		IsEIP4762:        isVerkle,

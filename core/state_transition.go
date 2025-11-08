@@ -22,13 +22,13 @@ import (
 	"math"
 	"math/big"
 
+	"github.com/holiman/uint256"
 	"github.com/tenderly/polygon-bor/common"
 	"github.com/tenderly/polygon-bor/core/tracing"
 	"github.com/tenderly/polygon-bor/core/types"
 	"github.com/tenderly/polygon-bor/core/vm"
 	"github.com/tenderly/polygon-bor/crypto/kzg4844"
 	"github.com/tenderly/polygon-bor/params"
-	"github.com/holiman/uint256"
 )
 
 // ExecutionResult includes all output after executing given evm
@@ -325,9 +325,10 @@ func (st *stateTransition) preCheck() error {
 		}
 	}
 	isOsaka := st.evm.ChainConfig().IsOsaka(st.evm.Context.BlockNumber, st.evm.Context.Time)
+	isMadhugiri := st.evm.ChainConfig().IsMadhugiri(st.evm.Context.BlockNumber)
 	if !msg.SkipTransactionChecks {
 		// Verify tx gas limit does not exceed EIP-7825 cap.
-		if isOsaka && msg.GasLimit > params.MaxTxGas {
+		if (isOsaka || isMadhugiri) && msg.GasLimit > params.MaxTxGas {
 			return fmt.Errorf("%w (cap: %d, tx: %d)", ErrGasLimitTooHigh, params.MaxTxGas, msg.GasLimit)
 		}
 		// Make sure the sender is an EOA

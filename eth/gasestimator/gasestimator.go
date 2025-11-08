@@ -74,7 +74,7 @@ func Estimate(ctx context.Context, call *core.Message, opts *Options, gasCap uin
 				blockTime = uint64(*opts.BlockOverrides.Time)
 			}
 		}
-		if opts.Config.IsOsaka(blockNumber, blockTime) {
+		if opts.Config.IsOsaka(blockNumber, blockTime) || opts.Config.IsMadhugiri(blockNumber) {
 			hi = params.MaxTxGas
 		}
 	}

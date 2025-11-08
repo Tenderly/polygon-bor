@@ -25,10 +25,10 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/holiman/uint256"
 	"github.com/tenderly/polygon-bor/common"
 	"github.com/tenderly/polygon-bor/crypto"
 	"github.com/tenderly/polygon-bor/rlp"
-	"github.com/holiman/uint256"
 )
 
 var (
@@ -50,6 +50,7 @@ const (
 	DynamicFeeTxType = 0x02
 	BlobTxType       = 0x03
 	SetCodeTxType    = 0x04
+	StateSyncTxType  = 0x7f
 )
 
 // Transaction is an Ethereum transaction.
