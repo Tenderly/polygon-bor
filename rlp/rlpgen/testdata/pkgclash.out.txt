@@ -1,10 +1,10 @@
 package test
 
-import "github.com/ethereum/go-ethereum/common"
-import "github.com/ethereum/go-ethereum/eth"
-import "github.com/ethereum/go-ethereum/rlp"
+import "github.com/tenderly/polygon-bor/common"
+import "github.com/tenderly/polygon-bor/eth"
+import "github.com/tenderly/polygon-bor/rlp"
 import "io"
-import eth1 "github.com/ethereum/go-ethereum/eth/protocols/eth"
+import eth1 "github.com/tenderly/polygon-bor/eth/protocols/eth"
 
 func (obj *Test) EncodeRLP(_w io.Writer) error {
 	w := rlp.NewEncoderBuffer(_w)

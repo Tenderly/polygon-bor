@@ -23,17 +23,17 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/ethereum/go-ethereum/cmd/evm/internal/t8ntool"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/tracing"
-	"github.com/ethereum/go-ethereum/eth/tracers/logger"
-	"github.com/ethereum/go-ethereum/internal/debug"
-	"github.com/ethereum/go-ethereum/internal/flags"
+	"github.com/tenderly/polygon-bor/cmd/evm/internal/t8ntool"
+	"github.com/tenderly/polygon-bor/core/state"
+	"github.com/tenderly/polygon-bor/core/tracing"
+	"github.com/tenderly/polygon-bor/eth/tracers/logger"
+	"github.com/tenderly/polygon-bor/internal/debug"
+	"github.com/tenderly/polygon-bor/internal/flags"
 	"github.com/urfave/cli/v2"
 
 	// Force-load the tracer engines to trigger registration
-	_ "github.com/ethereum/go-ethereum/eth/tracers/js"
-	_ "github.com/ethereum/go-ethereum/eth/tracers/native"
+	_ "github.com/tenderly/polygon-bor/eth/tracers/js"
+	_ "github.com/tenderly/polygon-bor/eth/tracers/native"
 )
 
 // Some other nice-to-haves:

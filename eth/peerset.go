@@ -23,9 +23,9 @@ import (
 	"slices"
 	"sync"
 
-	"github.com/ethereum/go-ethereum/eth/protocols/eth"
-	"github.com/ethereum/go-ethereum/eth/protocols/snap"
-	"github.com/ethereum/go-ethereum/p2p"
+	"github.com/tenderly/polygon-bor/eth/protocols/eth"
+	"github.com/tenderly/polygon-bor/eth/protocols/snap"
+	"github.com/tenderly/polygon-bor/p2p"
 )
 
 var (

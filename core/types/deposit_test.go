@@ -20,8 +20,8 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/accounts/abi"
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/tenderly/polygon-bor/accounts/abi"
+	"github.com/tenderly/polygon-bor/common"
 )
 
 var (

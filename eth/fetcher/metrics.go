@@ -18,7 +18,7 @@
 
 package fetcher
 
-import "github.com/ethereum/go-ethereum/metrics"
+import "github.com/tenderly/polygon-bor/metrics"
 
 var (
 	txAnnounceInMeter          = metrics.NewRegisteredMeter("eth/fetcher/transaction/announces/in", nil)

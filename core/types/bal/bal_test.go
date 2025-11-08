@@ -23,9 +23,9 @@ import (
 	"slices"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/internal/testrand"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/internal/testrand"
+	"github.com/tenderly/polygon-bor/rlp"
 	"github.com/holiman/uint256"
 )
 

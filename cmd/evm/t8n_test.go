@@ -28,9 +28,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/cmd/evm/internal/t8ntool"
-	"github.com/ethereum/go-ethereum/internal/cmdtest"
-	"github.com/ethereum/go-ethereum/internal/reexec"
+	"github.com/tenderly/polygon-bor/cmd/evm/internal/t8ntool"
+	"github.com/tenderly/polygon-bor/internal/cmdtest"
+	"github.com/tenderly/polygon-bor/internal/reexec"
 )
 
 func TestMain(m *testing.M) {

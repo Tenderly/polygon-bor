@@ -22,13 +22,13 @@ import (
 	"os"
 	"slices"
 
-	"github.com/ethereum/go-ethereum/beacon/blsync"
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/internal/debug"
-	"github.com/ethereum/go-ethereum/internal/flags"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/tenderly/polygon-bor/beacon/blsync"
+	"github.com/tenderly/polygon-bor/cmd/utils"
+	"github.com/tenderly/polygon-bor/internal/debug"
+	"github.com/tenderly/polygon-bor/internal/flags"
+	"github.com/tenderly/polygon-bor/log"
+	"github.com/tenderly/polygon-bor/node"
+	"github.com/tenderly/polygon-bor/rpc"
 	"github.com/urfave/cli/v2"
 )
 

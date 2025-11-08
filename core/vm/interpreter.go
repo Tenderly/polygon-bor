@@ -19,9 +19,9 @@ package vm
 import (
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/core/tracing"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/common/math"
+	"github.com/tenderly/polygon-bor/core/tracing"
 	"github.com/holiman/uint256"
 )
 

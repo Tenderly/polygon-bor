@@ -19,12 +19,12 @@ package sync
 import (
 	"sort"
 
-	"github.com/ethereum/go-ethereum/beacon/light"
-	"github.com/ethereum/go-ethereum/beacon/light/request"
-	"github.com/ethereum/go-ethereum/beacon/params"
-	"github.com/ethereum/go-ethereum/beacon/types"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/tenderly/polygon-bor/beacon/light"
+	"github.com/tenderly/polygon-bor/beacon/light/request"
+	"github.com/tenderly/polygon-bor/beacon/params"
+	"github.com/tenderly/polygon-bor/beacon/types"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/log"
 )
 
 const maxUpdateRequest = 8 // maximum number of updates requested in a single request

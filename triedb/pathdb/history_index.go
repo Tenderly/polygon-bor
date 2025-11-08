@@ -22,8 +22,8 @@ import (
 	"math"
 	"sort"
 
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/ethdb"
+	"github.com/tenderly/polygon-bor/core/rawdb"
+	"github.com/tenderly/polygon-bor/ethdb"
 )
 
 // parseIndex parses the index data with the supplied byte stream. The index data

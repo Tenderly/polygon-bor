@@ -24,7 +24,7 @@ import (
 	"math"
 	"slices"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/tenderly/polygon-bor/common"
 )
 
 // Params defines the basic parameters of the log index structure.
