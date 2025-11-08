@@ -104,6 +104,7 @@ require (
 	github.com/deepmap/oapi-codegen v1.6.0 // indirect
 	github.com/dlclark/regexp2 v1.7.0 // indirect
 	github.com/emicklei/dot v1.6.2 // indirect
+	github.com/ethereum/go-ethereum v1.16.4 // indirect
 	github.com/fjl/gencodec v0.1.0 // indirect
 	github.com/garslo/gogen v0.0.0-20170306192744-1d203ffc1f61 // indirect
 	github.com/getsentry/sentry-go v0.27.0 // indirect
