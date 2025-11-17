@@ -468,8 +468,9 @@ type ChainConfig struct {
 	AmsterdamTime *uint64 `json:"amsterdamTime,omitempty"` // Amsterdam switch time (nil = no fork, 0 = already on amsterdam)
 	VerkleTime    *uint64 `json:"verkleTime,omitempty"`    // Verkle switch time (nil = no fork, 0 = already on verkle)
 
-	AhmedabadBlock *big.Int `json:"ahmedabadBlock,omitempty"` // Ahmedabad switch block (nil = no fork, 0 = already on ahmedabad)
-	MadhugiriBlock *big.Int `json:"madhugiriBlock"`           // Madhugiri switch block (nil = no fork, 0 = already on madhugiri)
+	AhmedabadBlock    *big.Int `json:"ahmedabadBlock,omitempty"`    // Ahmedabad switch block (nil = no fork, 0 = already on ahmedabad)
+	MadhugiriBlock    *big.Int `json:"madhugiriBlock,omitempty"`    // Madhugiri switch block (nil = no fork, 0 = already on madhugiri)
+	MadhugiriProBlock *big.Int `json:"madhugiriProBlock,omitempty"` // MadhugiriPro switch block (nil = no fork, 0 = already on madhugiriPro)
 
 	// TerminalTotalDifficulty is the amount of total difficulty reached by
 	// the network that triggers the consensus upgrade.
@@ -880,6 +881,10 @@ func (c *ChainConfig) IsAhmedabad(number *big.Int) bool {
 
 func (c *ChainConfig) IsMadhugiri(number *big.Int) bool {
 	return isBlockForked(c.MadhugiriBlock, number)
+}
+
+func (c *ChainConfig) IsMadhugiriPro(number *big.Int) bool {
+	return isBlockForked(c.MadhugiriProBlock, number)
 }
 
 // IsVerkleGenesis checks whether the verkle fork is activated at the genesis block.
@@ -1392,7 +1397,7 @@ type Rules struct {
 	IsByzantium, IsConstantinople, IsPetersburg, IsIstanbul bool
 	IsBerlin, IsLondon                                      bool
 	IsMerge, IsShanghai, IsCancun, IsPrague, IsOsaka        bool
-	IsMadhugiri, IsAmsterdam, IsVerkle                      bool
+	IsMadhugiri, IsMadhugiriPro, IsAmsterdam, IsVerkle      bool
 }
 
 // Rules ensures c's ChainID is not nil.
@@ -1423,6 +1428,7 @@ func (c *ChainConfig) Rules(num *big.Int, isMerge bool, timestamp uint64) Rules 
 		IsPrague:         isMerge && c.IsPrague(num, timestamp),
 		IsOsaka:          isMerge && c.IsOsaka(num, timestamp),
 		IsMadhugiri:      isMerge && c.IsMadhugiri(num),
+		IsMadhugiriPro:   isMerge && c.IsMadhugiriPro(num),
 		IsAmsterdam:      isMerge && c.IsAmsterdam(num, timestamp),
 		IsVerkle:         isVerkle,
 		IsEIP4762:        isVerkle,
