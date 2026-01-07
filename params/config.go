@@ -471,6 +471,7 @@ type ChainConfig struct {
 	AhmedabadBlock    *big.Int `json:"ahmedabadBlock,omitempty"`    // Ahmedabad switch block (nil = no fork, 0 = already on ahmedabad)
 	MadhugiriBlock    *big.Int `json:"madhugiriBlock,omitempty"`    // Madhugiri switch block (nil = no fork, 0 = already on madhugiri)
 	MadhugiriProBlock *big.Int `json:"madhugiriProBlock,omitempty"` // MadhugiriPro switch block (nil = no fork, 0 = already on madhugiriPro)
+	DandeliBlock      *big.Int `json:"dandeliBlock,omitempty"`      // Dandeli switch block (nil = no fork, 0 = already on dandeli)
 
 	// TerminalTotalDifficulty is the amount of total difficulty reached by
 	// the network that triggers the consensus upgrade.
@@ -885,6 +886,10 @@ func (c *ChainConfig) IsMadhugiri(number *big.Int) bool {
 
 func (c *ChainConfig) IsMadhugiriPro(number *big.Int) bool {
 	return isBlockForked(c.MadhugiriProBlock, number)
+}
+
+func (c *ChainConfig) IsDandeli(number *big.Int) bool {
+	return isBlockForked(c.DandeliBlock, number)
 }
 
 // IsVerkleGenesis checks whether the verkle fork is activated at the genesis block.

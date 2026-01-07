@@ -52,6 +52,15 @@ func VerifyEIP1559Header(config *params.ChainConfig, parent, header *types.Heade
 	return nil
 }
 
+// calcParentGasTarget calculates the gas target for the parent block.
+// After Dandeli hard fork, the target gas percentage changes from 50% to 65%.
+func calcParentGasTarget(config *params.ChainConfig, parent *types.Header) uint64 {
+	if config.IsDandeli(parent.Number) {
+		return parent.GasLimit * params.TargetGasPercentagePostDandeli / 100
+	}
+	return parent.GasLimit / config.ElasticityMultiplier()
+}
+
 // CalcBaseFee calculates the basefee of the header.
 func CalcBaseFee(config *params.ChainConfig, parent *types.Header) *big.Int {
 	// If the current block is the first EIP-1559 block, return the InitialBaseFee.
@@ -59,7 +68,7 @@ func CalcBaseFee(config *params.ChainConfig, parent *types.Header) *big.Int {
 		return new(big.Int).SetUint64(params.InitialBaseFee)
 	}
 
-	parentGasTarget := parent.GasLimit / config.ElasticityMultiplier()
+	parentGasTarget := calcParentGasTarget(config, parent)
 	// If the parent gasUsed is the same as the target, the baseFee remains unchanged.
 	if parent.GasUsed == parentGasTarget {
 		return new(big.Int).Set(parent.BaseFee)
