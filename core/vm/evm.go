@@ -21,6 +21,7 @@ import (
 	"math/big"
 	"sync/atomic"
 
+	"github.com/holiman/uint256"
 	"github.com/tenderly/polygon-bor/common"
 	"github.com/tenderly/polygon-bor/core/state"
 	"github.com/tenderly/polygon-bor/core/tracing"
@@ -28,7 +29,6 @@ import (
 	"github.com/tenderly/polygon-bor/crypto"
 	"github.com/tenderly/polygon-bor/log"
 	"github.com/tenderly/polygon-bor/params"
-	"github.com/holiman/uint256"
 )
 
 type (
@@ -149,6 +149,8 @@ func NewEVM(blockCtx BlockContext, statedb StateDB, chainConfig *params.ChainCon
 	evm.precompiles = activePrecompiledContracts(evm.chainRules)
 
 	switch {
+	case evm.chainRules.IsLisovo:
+		evm.table = &lisovoInstructionSet
 	case evm.chainRules.IsOsaka:
 		evm.table = &osakaInstructionSet
 	case evm.chainRules.IsVerkle:
