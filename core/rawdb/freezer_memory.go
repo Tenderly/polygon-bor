@@ -23,10 +23,10 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/ethdb"
+	"github.com/tenderly/polygon-bor/log"
+	"github.com/tenderly/polygon-bor/rlp"
 )
 
 // memoryTable is used to store a list of sequential items in memory.

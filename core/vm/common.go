@@ -21,7 +21,7 @@ import (
 
 	"github.com/holiman/uint256"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/tenderly/polygon-bor/common"
 )
 
 // calcMemSize64 calculates the required memory size, and returns

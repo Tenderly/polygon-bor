@@ -24,7 +24,7 @@ import (
 
 	"github.com/holiman/uint256"
 
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/tenderly/polygon-bor/rlp"
 )
 
 func decodeEncode(input []byte, val interface{}) error {

@@ -6,10 +6,10 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/types/query"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/bor/clerk"
-	"github.com/ethereum/go-ethereum/consensus/bor/heimdall"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/consensus/bor/clerk"
+	"github.com/tenderly/polygon-bor/consensus/bor/heimdall"
+	"github.com/tenderly/polygon-bor/log"
 
 	"github.com/0xPolygon/heimdall-v2/x/clerk/types"
 )

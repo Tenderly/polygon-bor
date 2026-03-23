@@ -3,16 +3,16 @@ package filters
 import (
 	context "context"
 
-	common "github.com/ethereum/go-ethereum/common"
-	core "github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/filtermaps"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/state"
-	types "github.com/ethereum/go-ethereum/core/types"
-	ethdb "github.com/ethereum/go-ethereum/ethdb"
-	event "github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/params"
-	rpc "github.com/ethereum/go-ethereum/rpc"
+	common "github.com/tenderly/polygon-bor/common"
+	core "github.com/tenderly/polygon-bor/core"
+	"github.com/tenderly/polygon-bor/core/filtermaps"
+	"github.com/tenderly/polygon-bor/core/rawdb"
+	"github.com/tenderly/polygon-bor/core/state"
+	types "github.com/tenderly/polygon-bor/core/types"
+	ethdb "github.com/tenderly/polygon-bor/ethdb"
+	event "github.com/tenderly/polygon-bor/event"
+	"github.com/tenderly/polygon-bor/params"
+	rpc "github.com/tenderly/polygon-bor/rpc"
 )
 
 // nolint : unused
@@ -28,7 +28,7 @@ type TestBackend struct {
 	stateSyncFeed event.Feed
 }
 
-// bloombits logic was removed - https://github.com/ethereum/go-ethereum/pull/31081
+// bloombits logic was removed - https://github.com/tenderly/polygon-bor/pull/31081
 /*
 func (b *TestBackend) BloomStatus() (uint64, uint64) {
 	return params.BloomBitsBlocks, b.sections
@@ -143,7 +143,7 @@ func (b *TestBackend) SubscribeChainEvent(ch chan<- core.ChainEvent) event.Subsc
 	return b.chainFeed.Subscribe(ch)
 }
 
-// bloombits logic was removed - https://github.com/ethereum/go-ethereum/pull/31081
+// bloombits logic was removed - https://github.com/tenderly/polygon-bor/pull/31081
 /*
 func (b *TestBackend) ServiceFilter(ctx context.Context, session *bloombits.MatcherSession) {
 	requests := make(chan chan *bloombits.Retrieval)

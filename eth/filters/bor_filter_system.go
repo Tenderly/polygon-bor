@@ -3,9 +3,9 @@ package filters
 import (
 	"time"
 
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/tenderly/polygon-bor/core"
+	"github.com/tenderly/polygon-bor/core/types"
+	"github.com/tenderly/polygon-bor/rpc"
 )
 
 func (es *EventSystem) handleStateSyncEvent(filters filterIndex, ev core.StateSyncEvent) {

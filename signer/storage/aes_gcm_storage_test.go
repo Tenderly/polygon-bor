@@ -26,8 +26,8 @@ import (
 
 	"github.com/mattn/go-colorable"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/log"
 )
 
 func TestEncryption(t *testing.T) {

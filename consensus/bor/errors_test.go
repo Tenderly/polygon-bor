@@ -7,9 +7,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/bor/clerk"
-	"github.com/ethereum/go-ethereum/consensus/bor/valset"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/consensus/bor/clerk"
+	"github.com/tenderly/polygon-bor/consensus/bor/valset"
 )
 
 func TestMaxCheckpointLengthExceededError(t *testing.T) {

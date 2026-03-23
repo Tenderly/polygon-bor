@@ -5,14 +5,14 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/enr"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/core"
+	"github.com/tenderly/polygon-bor/log"
+	"github.com/tenderly/polygon-bor/metrics"
+	"github.com/tenderly/polygon-bor/p2p"
+	"github.com/tenderly/polygon-bor/p2p/enode"
+	"github.com/tenderly/polygon-bor/p2p/enr"
+	"github.com/tenderly/polygon-bor/params"
 )
 
 // TODO(@pratikspatil024) - Once everything is working, check if need to set limits

@@ -11,13 +11,13 @@ import (
 	"github.com/stretchr/testify/require"
 	"pgregory.net/rapid"
 
-	"github.com/ethereum/go-ethereum/common"
-	unique "github.com/ethereum/go-ethereum/common/set"
-	"github.com/ethereum/go-ethereum/consensus/bor/valset"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/tenderly/polygon-bor/common"
+	unique "github.com/tenderly/polygon-bor/common/set"
+	"github.com/tenderly/polygon-bor/consensus/bor/valset"
+	"github.com/tenderly/polygon-bor/core/rawdb"
+	"github.com/tenderly/polygon-bor/core/types"
+	"github.com/tenderly/polygon-bor/crypto"
+	"github.com/tenderly/polygon-bor/params"
 )
 
 const (

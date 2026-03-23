@@ -5,7 +5,7 @@ package bal
 import (
 	"io"
 
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/tenderly/polygon-bor/rlp"
 )
 
 func (obj *BlockAccessList) EncodeRLP(_w io.Writer) error {

@@ -34,20 +34,20 @@ import (
 	"github.com/holiman/uint256"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/blockstm"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/state/snapshot"
-	"github.com/ethereum/go-ethereum/core/stateless"
-	"github.com/ethereum/go-ethereum/core/tracing"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/ethereum/go-ethereum/trie"
-	"github.com/ethereum/go-ethereum/trie/trienode"
-	"github.com/ethereum/go-ethereum/triedb"
-	"github.com/ethereum/go-ethereum/triedb/hashdb"
-	"github.com/ethereum/go-ethereum/triedb/pathdb"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/core/blockstm"
+	"github.com/tenderly/polygon-bor/core/rawdb"
+	"github.com/tenderly/polygon-bor/core/state/snapshot"
+	"github.com/tenderly/polygon-bor/core/stateless"
+	"github.com/tenderly/polygon-bor/core/tracing"
+	"github.com/tenderly/polygon-bor/core/types"
+	"github.com/tenderly/polygon-bor/crypto"
+	"github.com/tenderly/polygon-bor/rlp"
+	"github.com/tenderly/polygon-bor/trie"
+	"github.com/tenderly/polygon-bor/trie/trienode"
+	"github.com/tenderly/polygon-bor/triedb"
+	"github.com/tenderly/polygon-bor/triedb/hashdb"
+	"github.com/tenderly/polygon-bor/triedb/pathdb"
 )
 
 // Tests that updating a state trie does not leak any database writes prior to
@@ -174,7 +174,7 @@ func TestIntermediateLeaks(t *testing.T) {
 
 // TestCopy tests that copying a StateDB object indeed makes the original and
 // the copy independent of each other. This test is a regression test against
-// https://github.com/ethereum/go-ethereum/pull/15549.
+// https://github.com/tenderly/polygon-bor/pull/15549.
 func TestCopy(t *testing.T) {
 	// Create a random state test to copy and modify "independently"
 	orig, _ := New(types.EmptyRootHash, NewDatabaseForTesting())
@@ -1274,7 +1274,7 @@ func TestMVHashMapRevertConcurrent(t *testing.T) {
 }
 
 // TestCopyOfCopy tests that modified objects are carried over to the copy, and the copy of the copy.
-// See https://github.com/ethereum/go-ethereum/pull/15225#issuecomment-380191512
+// See https://github.com/tenderly/polygon-bor/pull/15225#issuecomment-380191512
 func TestCopyOfCopy(t *testing.T) {
 	state, _ := New(types.EmptyRootHash, NewDatabaseForTesting())
 	addr := common.HexToAddress("aaaa")
@@ -1292,7 +1292,7 @@ func TestCopyOfCopy(t *testing.T) {
 // Tests a regression where committing a copy lost some internal meta information,
 // leading to corrupted subsequent copies.
 //
-// See https://github.com/ethereum/go-ethereum/issues/20106.
+// See https://github.com/tenderly/polygon-bor/issues/20106.
 func TestCopyCommitCopy(t *testing.T) {
 	tdb := NewDatabaseForTesting()
 	state, _ := New(types.EmptyRootHash, tdb)
@@ -1374,7 +1374,7 @@ func TestCopyCommitCopy(t *testing.T) {
 // Tests a regression where committing a copy lost some internal meta information,
 // leading to corrupted subsequent copies.
 //
-// See https://github.com/ethereum/go-ethereum/issues/20106.
+// See https://github.com/tenderly/polygon-bor/issues/20106.
 func TestCopyCopyCommitCopy(t *testing.T) {
 	state, _ := New(types.EmptyRootHash, NewDatabaseForTesting())
 

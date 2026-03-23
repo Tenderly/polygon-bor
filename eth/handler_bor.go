@@ -7,12 +7,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/bor"
-	"github.com/ethereum/go-ethereum/consensus/bor/heimdall"
-	"github.com/ethereum/go-ethereum/consensus/bor/heimdall/checkpoint"
-	"github.com/ethereum/go-ethereum/consensus/bor/heimdall/milestone"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/consensus/bor"
+	"github.com/tenderly/polygon-bor/consensus/bor/heimdall"
+	"github.com/tenderly/polygon-bor/consensus/bor/heimdall/checkpoint"
+	"github.com/tenderly/polygon-bor/consensus/bor/heimdall/milestone"
+	"github.com/tenderly/polygon-bor/log"
 )
 
 var (

@@ -30,12 +30,12 @@ import (
 
 	"github.com/donovanhide/eventsource"
 
-	"github.com/ethereum/go-ethereum/beacon/merkle"
-	"github.com/ethereum/go-ethereum/beacon/params"
-	"github.com/ethereum/go-ethereum/beacon/types"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/tenderly/polygon-bor/beacon/merkle"
+	"github.com/tenderly/polygon-bor/beacon/params"
+	"github.com/tenderly/polygon-bor/beacon/types"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/common/hexutil"
+	"github.com/tenderly/polygon-bor/log"
 )
 
 var (

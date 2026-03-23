@@ -21,7 +21,7 @@ import (
 
 	"github.com/holiman/uint256"
 
-	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/tenderly/polygon-bor/core/types"
 )
 
 const (

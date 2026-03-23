@@ -6,10 +6,10 @@ import (
 
 	json "github.com/json-iterator/go"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/generics"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/common/generics"
+	"github.com/tenderly/polygon-bor/ethdb"
+	"github.com/tenderly/polygon-bor/log"
 )
 
 var (

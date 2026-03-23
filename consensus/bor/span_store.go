@@ -8,11 +8,11 @@ import (
 
 	lru "github.com/hashicorp/golang-lru"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/bor/heimdall/span"
-	"github.com/ethereum/go-ethereum/consensus/bor/valset"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/consensus/bor/heimdall/span"
+	"github.com/tenderly/polygon-bor/consensus/bor/valset"
+	"github.com/tenderly/polygon-bor/log"
+	"github.com/tenderly/polygon-bor/rpc"
 
 	ctypes "github.com/cometbft/cometbft/rpc/core/types"
 

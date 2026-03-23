@@ -3,8 +3,8 @@ package wit
 import (
 	"errors"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/stateless"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/core/stateless"
 )
 
 // Constants to match up protocol versions and messages

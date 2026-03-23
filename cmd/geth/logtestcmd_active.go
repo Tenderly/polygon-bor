@@ -28,8 +28,8 @@ import (
 	"github.com/holiman/uint256"
 	"github.com/urfave/cli/v2"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/log"
 )
 
 var logTestCommand = &cli.Command{

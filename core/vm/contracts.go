@@ -34,15 +34,15 @@ import (
 	"github.com/holiman/uint256"
 	"golang.org/x/crypto/ripemd160"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/bitutil"
-	"github.com/ethereum/go-ethereum/core/tracing"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/crypto/blake2b"
-	"github.com/ethereum/go-ethereum/crypto/bn256"
-	"github.com/ethereum/go-ethereum/crypto/kzg4844"
-	"github.com/ethereum/go-ethereum/crypto/secp256r1"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/common/bitutil"
+	"github.com/tenderly/polygon-bor/core/tracing"
+	"github.com/tenderly/polygon-bor/crypto"
+	"github.com/tenderly/polygon-bor/crypto/blake2b"
+	"github.com/tenderly/polygon-bor/crypto/bn256"
+	"github.com/tenderly/polygon-bor/crypto/kzg4844"
+	"github.com/tenderly/polygon-bor/crypto/secp256r1"
+	"github.com/tenderly/polygon-bor/params"
 )
 
 // PrecompiledContract is the basic interface for native Go contracts. The implementation

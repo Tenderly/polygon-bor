@@ -23,7 +23,7 @@ import (
 
 	"github.com/davecgh/go-spew/spew"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/tenderly/polygon-bor/common"
 )
 
 // typeWithoutStringer is an alias for the Type type which simply doesn't implement

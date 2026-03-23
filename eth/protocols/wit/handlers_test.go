@@ -5,11 +5,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/enode"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/core"
+	"github.com/tenderly/polygon-bor/log"
+	"github.com/tenderly/polygon-bor/p2p"
+	"github.com/tenderly/polygon-bor/p2p/enode"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

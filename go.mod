@@ -1,4 +1,4 @@
-module github.com/ethereum/go-ethereum
+module github.com/tenderly/polygon-bor
 
 // Note: Change the go image version in Dockerfile if you change this.
 go 1.26.1
@@ -355,7 +355,7 @@ replace (
 	github.com/cometbft/cometbft => github.com/0xPolygon/cometbft v0.3.6-polygon
 	github.com/cometbft/cometbft-db => github.com/0xPolygon/cometbft-db v0.14.1-polygon
 	github.com/cosmos/cosmos-sdk => github.com/0xPolygon/cosmos-sdk v0.2.8-polygon
-	github.com/ethereum/go-ethereum => github.com/0xPolygon/bor v1.14.14-0.20260219070410-6b0405c0a5ca
-	github.com/ethereum/go-ethereum/common/math => github.com/0xPolygon/bor/common/math v1.5.5
+	github.com/tenderly/polygon-bor => github.com/0xPolygon/bor v1.14.14-0.20260219070410-6b0405c0a5ca
+	github.com/tenderly/polygon-bor/common/math => github.com/0xPolygon/bor/common/math v1.5.5
 	go.mongodb.org/mongo-driver => go.mongodb.org/mongo-driver v1.14.0
 )

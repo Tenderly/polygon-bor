@@ -3,7 +3,7 @@ package wit
 import (
 	"time"
 
-	"github.com/ethereum/go-ethereum/p2p/tracker"
+	"github.com/tenderly/polygon-bor/p2p/tracker"
 )
 
 // requestTracker is a singleton tracker for wit/0 and newer request times.

@@ -8,7 +8,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/tenderly/polygon-bor/common"
 
 	stakeTypes "github.com/0xPolygon/heimdall-v2/x/stake/types"
 )

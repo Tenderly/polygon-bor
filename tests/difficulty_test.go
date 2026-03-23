@@ -23,7 +23,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/tenderly/polygon-bor/params"
 )
 
 var (

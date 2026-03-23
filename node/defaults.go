@@ -23,10 +23,10 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/nat"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/p2p"
+	"github.com/tenderly/polygon-bor/p2p/nat"
+	"github.com/tenderly/polygon-bor/rpc"
 )
 
 const (

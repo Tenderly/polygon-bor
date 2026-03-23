@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/bor/clerk"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/consensus/bor/clerk"
 
 	"github.com/0xPolygon/heimdall-v2/x/clerk/types"
 )

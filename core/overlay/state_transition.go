@@ -20,10 +20,10 @@ import (
 	"bytes"
 	"encoding/gob"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/core/rawdb"
+	"github.com/tenderly/polygon-bor/ethdb"
+	"github.com/tenderly/polygon-bor/log"
 )
 
 // TransitionState is a structure that holds the progress markers of the

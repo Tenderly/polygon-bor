@@ -5,9 +5,9 @@ import (
 	"errors"
 	"math"
 
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/tenderly/polygon-bor/common/hexutil"
+	"github.com/tenderly/polygon-bor/core/types"
+	"github.com/tenderly/polygon-bor/rpc"
 
 	protobor "github.com/0xPolygon/polyproto/bor"
 	protoutil "github.com/0xPolygon/polyproto/utils"

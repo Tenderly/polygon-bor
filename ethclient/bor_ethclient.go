@@ -3,9 +3,9 @@ package ethclient
 import (
 	"context"
 
-	ethereum "github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
+	ethereum "github.com/tenderly/polygon-bor"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/core/types"
 )
 
 const (

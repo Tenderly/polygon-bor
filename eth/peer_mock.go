@@ -9,10 +9,10 @@ import (
 
 	gomock "go.uber.org/mock/gomock"
 
-	common "github.com/ethereum/go-ethereum/common"
-	stateless "github.com/ethereum/go-ethereum/core/stateless"
-	wit "github.com/ethereum/go-ethereum/eth/protocols/wit"
-	log "github.com/ethereum/go-ethereum/log"
+	common "github.com/tenderly/polygon-bor/common"
+	stateless "github.com/tenderly/polygon-bor/core/stateless"
+	wit "github.com/tenderly/polygon-bor/eth/protocols/wit"
+	log "github.com/tenderly/polygon-bor/log"
 )
 
 // MockWitnessPeer is a mock of WitnessPeer interface.

@@ -30,12 +30,12 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/accounts/usbwallet/trezor"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/tenderly/polygon-bor/accounts"
+	"github.com/tenderly/polygon-bor/accounts/usbwallet/trezor"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/common/hexutil"
+	"github.com/tenderly/polygon-bor/core/types"
+	"github.com/tenderly/polygon-bor/log"
 )
 
 // ErrTrezorPINNeeded is returned if opening the trezor requires a PIN code. In

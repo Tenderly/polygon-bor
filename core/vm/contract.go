@@ -19,8 +19,8 @@ package vm
 import (
 	"github.com/holiman/uint256"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/tracing"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/core/tracing"
 )
 
 // Contract represents an ethereum contract in the state database. It contains

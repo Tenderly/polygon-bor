@@ -21,12 +21,12 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/txpool"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/eth/protocols/eth"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/core/rawdb"
+	"github.com/tenderly/polygon-bor/core/txpool"
+	"github.com/tenderly/polygon-bor/eth/downloader"
+	"github.com/tenderly/polygon-bor/eth/protocols/eth"
+	"github.com/tenderly/polygon-bor/log"
 )
 
 const (
@@ -226,7 +226,7 @@ func (cs *chainSyncer) modeAndLocalHead() (downloader.SyncMode, *big.Int) {
 	// 	}
 	// }
 
-	// For more info - https://github.com/ethereum/go-ethereum/pull/28171
+	// For more info - https://github.com/tenderly/polygon-bor/pull/28171
 	// We are in a full sync, but the associated head state is missing. To complete
 	// the head state, forcefully rerun the snap sync. Note it doesn't mean the
 	// persistent state is corrupted, just mismatch with the head block.

@@ -13,12 +13,12 @@ import (
 	ctypes "github.com/cometbft/cometbft/rpc/core/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/bor/clerk"
-	"github.com/ethereum/go-ethereum/consensus/bor/heimdall/checkpoint"
-	"github.com/ethereum/go-ethereum/consensus/bor/heimdall/milestone"
-	"github.com/ethereum/go-ethereum/consensus/bor/valset"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/consensus/bor/clerk"
+	"github.com/tenderly/polygon-bor/consensus/bor/heimdall/checkpoint"
+	"github.com/tenderly/polygon-bor/consensus/bor/heimdall/milestone"
+	"github.com/tenderly/polygon-bor/consensus/bor/valset"
+	"github.com/tenderly/polygon-bor/rpc"
 
 	stakeTypes "github.com/0xPolygon/heimdall-v2/x/stake/types"
 	"go.uber.org/mock/gomock"

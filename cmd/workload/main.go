@@ -22,8 +22,8 @@ import (
 
 	"github.com/urfave/cli/v2"
 
-	"github.com/ethereum/go-ethereum/internal/debug"
-	"github.com/ethereum/go-ethereum/internal/flags"
+	"github.com/tenderly/polygon-bor/internal/debug"
+	"github.com/tenderly/polygon-bor/internal/flags"
 )
 
 var app = flags.NewApp("go-ethereum workload test tool")

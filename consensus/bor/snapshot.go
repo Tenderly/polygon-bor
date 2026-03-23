@@ -4,15 +4,15 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/ethereum/go-ethereum/consensus/bor/valset"
+	"github.com/tenderly/polygon-bor/consensus/bor/valset"
 
 	lru "github.com/hashicorp/golang-lru"
 
-	"github.com/ethereum/go-ethereum/common"
-	borSpan "github.com/ethereum/go-ethereum/consensus/bor/heimdall/span"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/tenderly/polygon-bor/common"
+	borSpan "github.com/tenderly/polygon-bor/consensus/bor/heimdall/span"
+	"github.com/tenderly/polygon-bor/core/types"
+	"github.com/tenderly/polygon-bor/ethdb"
+	"github.com/tenderly/polygon-bor/params"
 )
 
 // Snapshot is the state of the authorization voting at a given point in time.

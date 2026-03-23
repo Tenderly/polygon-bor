@@ -1,8 +1,8 @@
 package stateless
 
 import (
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/core/types"
 )
 
 // MockHeaderReader is a mock implementation of HeaderReader for testing.

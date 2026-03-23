@@ -3,8 +3,8 @@ package main
 import (
 	"os"
 
-	"github.com/ethereum/go-ethereum/internal/cli"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/tenderly/polygon-bor/internal/cli"
+	"github.com/tenderly/polygon-bor/params"
 )
 
 func main() {
