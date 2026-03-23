@@ -4,10 +4,10 @@ import (
 	"crypto/rand"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/eth/protocols/eth"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/enode"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/eth/protocols/eth"
+	"github.com/tenderly/polygon-bor/p2p"
+	"github.com/tenderly/polygon-bor/p2p/enode"
 )
 
 func TestPeerSetForgetTransactions(t *testing.T) {

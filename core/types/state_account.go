@@ -21,8 +21,8 @@ import (
 
 	"github.com/holiman/uint256"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/rlp"
 )
 
 //go:generate go run ../../rlp/rlpgen -type StateAccount -out gen_account_rlp.go

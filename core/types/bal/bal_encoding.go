@@ -28,13 +28,13 @@ import (
 
 	"github.com/holiman/uint256"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/crypto"
+	"github.com/tenderly/polygon-bor/params"
+	"github.com/tenderly/polygon-bor/rlp"
 )
 
-//go:generate go run github.com/ethereum/go-ethereum/rlp/rlpgen -out bal_encoding_rlp_generated.go -type BlockAccessList -decoder
+//go:generate go run github.com/tenderly/polygon-bor/rlp/rlpgen -out bal_encoding_rlp_generated.go -type BlockAccessList -decoder
 
 // These are objects used as input for the access list encoding. They mirror
 // the spec format.

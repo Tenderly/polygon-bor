@@ -23,14 +23,14 @@ import (
 	"math"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/internal/ethapi/override"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/core"
+	"github.com/tenderly/polygon-bor/core/state"
+	"github.com/tenderly/polygon-bor/core/types"
+	"github.com/tenderly/polygon-bor/core/vm"
+	"github.com/tenderly/polygon-bor/internal/ethapi/override"
+	"github.com/tenderly/polygon-bor/log"
+	"github.com/tenderly/polygon-bor/params"
 )
 
 // Options are the contextual parameters to execute the requested call.

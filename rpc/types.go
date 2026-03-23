@@ -25,8 +25,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/common/hexutil"
 )
 
 // Timestamp represents a Unix timestamp that can be unmarshaled from both decimal and hex strings.

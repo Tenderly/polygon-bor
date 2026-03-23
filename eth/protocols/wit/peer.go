@@ -6,10 +6,10 @@ import (
 
 	mapset "github.com/deckarep/golang-set/v2"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/stateless"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/core/stateless"
+	"github.com/tenderly/polygon-bor/log"
+	"github.com/tenderly/polygon-bor/p2p"
 )
 
 const (

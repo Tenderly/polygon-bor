@@ -28,7 +28,7 @@ import (
 
 	"github.com/holiman/uint256"
 
-	"github.com/ethereum/go-ethereum/core/vm"
+	"github.com/tenderly/polygon-bor/core/vm"
 )
 
 // Program is a simple bytecode container. It can be used to construct

@@ -4,9 +4,9 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/tenderly/polygon-bor/common/hexutil"
+	"github.com/tenderly/polygon-bor/core/types"
+	"github.com/tenderly/polygon-bor/rlp"
 )
 
 // TestDecodeRLP_BorWitnessFormat verifies that a witness RLP-encoded in the

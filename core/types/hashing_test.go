@@ -24,12 +24,12 @@ import (
 	mrand "math/rand"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/common/hexutil"
+	"github.com/tenderly/polygon-bor/core/types"
+	"github.com/tenderly/polygon-bor/crypto"
+	"github.com/tenderly/polygon-bor/rlp"
+	"github.com/tenderly/polygon-bor/trie"
 )
 
 func TestDeriveSha(t *testing.T) {
@@ -83,7 +83,7 @@ func TestEIP2718DeriveSha(t *testing.T) {
 
 // goos: darwin
 // goarch: arm64
-// pkg: github.com/ethereum/go-ethereum/core/types
+// pkg: github.com/tenderly/polygon-bor/core/types
 // cpu: Apple M1 Pro
 // BenchmarkDeriveSha200
 // BenchmarkDeriveSha200/std_trie

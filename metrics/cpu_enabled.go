@@ -22,7 +22,7 @@ package metrics
 import (
 	"github.com/shirou/gopsutil/cpu"
 
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/tenderly/polygon-bor/log"
 )
 
 // ReadCPUStats retrieves the current CPU stats.

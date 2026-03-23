@@ -26,13 +26,13 @@ import (
 
 	"github.com/holiman/uint256"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/tracing"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/triedb"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/core/rawdb"
+	"github.com/tenderly/polygon-bor/core/state"
+	"github.com/tenderly/polygon-bor/core/tracing"
+	"github.com/tenderly/polygon-bor/core/types"
+	"github.com/tenderly/polygon-bor/crypto"
+	"github.com/tenderly/polygon-bor/triedb"
 )
 
 // Tests that transactions can be added to strict lists and list contents and

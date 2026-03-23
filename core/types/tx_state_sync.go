@@ -21,8 +21,8 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/rlp"
 )
 
 // StateSyncTx is a system transaction in Bor that introduces state sync events.

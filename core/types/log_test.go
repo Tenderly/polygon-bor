@@ -24,8 +24,8 @@ import (
 
 	"github.com/davecgh/go-spew/spew"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/common/hexutil"
 )
 
 var unmarshalLogTests = map[string]struct {

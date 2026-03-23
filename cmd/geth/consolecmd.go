@@ -25,9 +25,9 @@ import (
 
 	"github.com/urfave/cli/v2"
 
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/console"
-	"github.com/ethereum/go-ethereum/node"
+	"github.com/tenderly/polygon-bor/cmd/utils"
+	"github.com/tenderly/polygon-bor/console"
+	"github.com/tenderly/polygon-bor/node"
 )
 
 var (

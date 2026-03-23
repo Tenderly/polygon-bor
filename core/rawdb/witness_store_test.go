@@ -8,7 +8,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/tenderly/polygon-bor/common"
 )
 
 // testHash returns a deterministic hash from an integer seed.

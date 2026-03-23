@@ -21,11 +21,11 @@ import (
 	"os"
 	"runtime/debug"
 
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/stateless"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/tenderly/polygon-bor/core"
+	"github.com/tenderly/polygon-bor/core/stateless"
+	"github.com/tenderly/polygon-bor/core/types"
+	"github.com/tenderly/polygon-bor/core/vm"
+	"github.com/tenderly/polygon-bor/rlp"
 )
 
 // Payload represents the input data for stateless execution containing

@@ -26,13 +26,13 @@ import (
 
 	cli "github.com/urfave/cli/v2"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/consensus/clique"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/common/hexutil"
+	"github.com/tenderly/polygon-bor/common/math"
+	"github.com/tenderly/polygon-bor/consensus/clique"
+	"github.com/tenderly/polygon-bor/core/types"
+	"github.com/tenderly/polygon-bor/crypto"
+	"github.com/tenderly/polygon-bor/rlp"
 )
 
 //go:generate go run github.com/fjl/gencodec -type header -field-override headerMarshaling -out gen_header.go

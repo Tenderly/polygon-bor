@@ -28,8 +28,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/crypto"
 )
 
 var jsonEventTransfer = []byte(`{

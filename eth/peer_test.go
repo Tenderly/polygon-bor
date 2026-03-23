@@ -13,14 +13,14 @@ import (
 	"github.com/stretchr/testify/assert" // import path where ethPeer lives
 	"go.uber.org/mock/gomock"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/stateless"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/eth/protocols/eth"
-	"github.com/ethereum/go-ethereum/eth/protocols/wit"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/enode"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/core/stateless"
+	"github.com/tenderly/polygon-bor/core/types"
+	"github.com/tenderly/polygon-bor/eth/protocols/eth"
+	"github.com/tenderly/polygon-bor/eth/protocols/wit"
+	"github.com/tenderly/polygon-bor/log"
+	"github.com/tenderly/polygon-bor/p2p"
+	"github.com/tenderly/polygon-bor/p2p/enode"
 )
 
 func TestRequestWitnesses_NoWitPeer(t *testing.T) {

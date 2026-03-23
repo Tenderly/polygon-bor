@@ -29,8 +29,8 @@ import (
 
 	"gotest.tools/assert"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/params"
 )
 
 // precompiledTest defines the input/output pairs for precompiled contract tests.

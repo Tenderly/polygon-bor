@@ -3,10 +3,10 @@ package server
 import (
 	"net/http"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/internal/cli/server/proto"
-	"github.com/ethereum/go-ethereum/p2p"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/core/types"
+	"github.com/tenderly/polygon-bor/internal/cli/server/proto"
+	"github.com/tenderly/polygon-bor/p2p"
 
 	protobor "github.com/0xPolygon/polyproto/bor"
 	protocommon "github.com/0xPolygon/polyproto/common"

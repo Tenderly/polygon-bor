@@ -28,7 +28,7 @@ import (
 
 	"golang.org/x/crypto/sha3"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/tenderly/polygon-bor/common"
 )
 
 // testHasher is the helper tool for transaction/receipt list hashing.

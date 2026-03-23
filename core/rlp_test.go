@@ -23,12 +23,12 @@ import (
 
 	"golang.org/x/crypto/sha3"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/consensus/ethash"
+	"github.com/tenderly/polygon-bor/core/types"
+	"github.com/tenderly/polygon-bor/crypto"
+	"github.com/tenderly/polygon-bor/params"
+	"github.com/tenderly/polygon-bor/rlp"
 )
 
 func getBlock(transactions int, uncles int, dataSize int) *types.Block {

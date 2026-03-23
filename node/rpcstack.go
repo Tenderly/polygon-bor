@@ -33,8 +33,8 @@ import (
 
 	"github.com/rs/cors"
 
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/tenderly/polygon-bor/log"
+	"github.com/tenderly/polygon-bor/rpc"
 )
 
 // httpConfig is the JSON-RPC/HTTP configuration.

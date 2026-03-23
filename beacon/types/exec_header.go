@@ -23,8 +23,8 @@ import (
 	zrntcommon "github.com/protolambda/zrnt/eth2/beacon/common"
 	"github.com/protolambda/ztyp/tree"
 
-	"github.com/ethereum/go-ethereum/beacon/merkle"
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/tenderly/polygon-bor/beacon/merkle"
+	"github.com/tenderly/polygon-bor/common"
 
 	// beacon chain forks
 	"github.com/protolambda/zrnt/eth2/beacon/capella"

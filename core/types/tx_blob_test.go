@@ -22,9 +22,9 @@ import (
 
 	"github.com/holiman/uint256"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/crypto/kzg4844"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/crypto"
+	"github.com/tenderly/polygon-bor/crypto/kzg4844"
 )
 
 // This test verifies that tx.Hash() is not affected by presence of a BlobTxSidecar.

@@ -24,14 +24,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/eth/catalyst"
-	"github.com/ethereum/go-ethereum/eth/ethconfig"
-	"github.com/ethereum/go-ethereum/internal/utesting"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/common/hexutil"
+	"github.com/tenderly/polygon-bor/eth"
+	"github.com/tenderly/polygon-bor/eth/catalyst"
+	"github.com/tenderly/polygon-bor/eth/ethconfig"
+	"github.com/tenderly/polygon-bor/internal/utesting"
+	"github.com/tenderly/polygon-bor/node"
+	"github.com/tenderly/polygon-bor/p2p"
 )
 
 func makeJWTSecret(t *testing.T) (string, [32]byte, error) {

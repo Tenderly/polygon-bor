@@ -25,11 +25,11 @@ import (
 
 	"github.com/dop251/goja"
 
-	"github.com/ethereum/go-ethereum/internal/ethapi"
-	"github.com/ethereum/go-ethereum/internal/jsre/deps"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/signer/core"
-	"github.com/ethereum/go-ethereum/signer/storage"
+	"github.com/tenderly/polygon-bor/internal/ethapi"
+	"github.com/tenderly/polygon-bor/internal/jsre/deps"
+	"github.com/tenderly/polygon-bor/log"
+	"github.com/tenderly/polygon-bor/signer/core"
+	"github.com/tenderly/polygon-bor/signer/storage"
 )
 
 // consoleOutput is an override for the console.log and console.error methods to

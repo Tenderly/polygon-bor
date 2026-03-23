@@ -8,7 +8,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/tenderly/polygon-bor/common"
 )
 
 func TestSlowTxTopTrackerKeepsTop10(t *testing.T) {

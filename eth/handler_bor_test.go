@@ -10,18 +10,18 @@ import (
 
 	ctypes "github.com/cometbft/cometbft/rpc/core/types"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/bor"
-	"github.com/ethereum/go-ethereum/consensus/bor/clerk"
-	"github.com/ethereum/go-ethereum/consensus/bor/heimdall/checkpoint"
-	"github.com/ethereum/go-ethereum/consensus/bor/heimdall/milestone"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/eth/downloader/whitelist"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/consensus/bor"
+	"github.com/tenderly/polygon-bor/consensus/bor/clerk"
+	"github.com/tenderly/polygon-bor/consensus/bor/heimdall/checkpoint"
+	"github.com/tenderly/polygon-bor/consensus/bor/heimdall/milestone"
+	"github.com/tenderly/polygon-bor/consensus/ethash"
+	"github.com/tenderly/polygon-bor/core"
+	"github.com/tenderly/polygon-bor/core/rawdb"
+	"github.com/tenderly/polygon-bor/eth/downloader"
+	"github.com/tenderly/polygon-bor/eth/downloader/whitelist"
+	"github.com/tenderly/polygon-bor/event"
+	"github.com/tenderly/polygon-bor/params"
 )
 
 type mockHeimdall struct {

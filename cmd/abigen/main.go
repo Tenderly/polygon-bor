@@ -26,12 +26,12 @@ import (
 
 	"github.com/urfave/cli/v2"
 
-	"github.com/ethereum/go-ethereum/accounts/abi/abigen"
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/common/compiler"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/internal/flags"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/tenderly/polygon-bor/accounts/abi/abigen"
+	"github.com/tenderly/polygon-bor/cmd/utils"
+	"github.com/tenderly/polygon-bor/common/compiler"
+	"github.com/tenderly/polygon-bor/crypto"
+	"github.com/tenderly/polygon-bor/internal/flags"
+	"github.com/tenderly/polygon-bor/log"
 )
 
 var (

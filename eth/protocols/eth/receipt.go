@@ -23,8 +23,8 @@ import (
 	"iter"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/tenderly/polygon-bor/core/types"
+	"github.com/tenderly/polygon-bor/rlp"
 )
 
 // This is just a sanity limit for the size of a single receipt.

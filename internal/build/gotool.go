@@ -25,7 +25,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/internal/download"
+	"github.com/tenderly/polygon-bor/internal/download"
 )
 
 type GoToolchain struct {

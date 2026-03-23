@@ -17,8 +17,8 @@
 package runtime
 
 import (
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/vm"
+	"github.com/tenderly/polygon-bor/core"
+	"github.com/tenderly/polygon-bor/core/vm"
 )
 
 func NewEnv(cfg *Config) *vm.EVM {

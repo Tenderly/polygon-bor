@@ -22,8 +22,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/accounts/abi"
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/tenderly/polygon-bor/accounts/abi"
+	"github.com/tenderly/polygon-bor/common"
 )
 
 // decodedCallData is an internal type to represent a method call parsed according

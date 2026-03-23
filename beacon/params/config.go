@@ -29,10 +29,10 @@ import (
 
 	yaml "gopkg.in/yaml.v3"
 
-	"github.com/ethereum/go-ethereum/beacon/merkle"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/tenderly/polygon-bor/beacon/merkle"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/common/hexutil"
+	"github.com/tenderly/polygon-bor/log"
 )
 
 // syncCommitteeDomain specifies the signatures specific use to avoid clashes

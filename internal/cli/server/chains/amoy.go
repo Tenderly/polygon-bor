@@ -3,9 +3,9 @@ package chains
 import (
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/core"
+	"github.com/tenderly/polygon-bor/params"
 )
 
 var amoyTestnet = &Chain{

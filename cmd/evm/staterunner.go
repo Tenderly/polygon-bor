@@ -26,11 +26,11 @@ import (
 
 	"github.com/urfave/cli/v2"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/internal/flags"
-	"github.com/ethereum/go-ethereum/tests"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/core/rawdb"
+	"github.com/tenderly/polygon-bor/core/vm"
+	"github.com/tenderly/polygon-bor/internal/flags"
+	"github.com/tenderly/polygon-bor/tests"
 )
 
 var (

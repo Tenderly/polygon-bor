@@ -60,11 +60,11 @@ import (
 	"time"
 
 	"github.com/cespare/cp"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto/signify"
-	"github.com/ethereum/go-ethereum/internal/build"
-	"github.com/ethereum/go-ethereum/internal/download"
-	"github.com/ethereum/go-ethereum/internal/version"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/crypto/signify"
+	"github.com/tenderly/polygon-bor/internal/build"
+	"github.com/tenderly/polygon-bor/internal/download"
+	"github.com/tenderly/polygon-bor/internal/version"
 )
 
 var (
@@ -487,8 +487,8 @@ func doCheckGenerate() {
 func doCheckBadDeps() {
 	baddeps := [][2]string{
 		// Rawdb tends to be a dumping ground for db utils, sometimes leaking the db itself
-		{"github.com/ethereum/go-ethereum/core/rawdb", "github.com/ethereum/go-ethereum/ethdb/leveldb"},
-		{"github.com/ethereum/go-ethereum/core/rawdb", "github.com/ethereum/go-ethereum/ethdb/pebbledb"},
+		{"github.com/tenderly/polygon-bor/core/rawdb", "github.com/tenderly/polygon-bor/ethdb/leveldb"},
+		{"github.com/tenderly/polygon-bor/core/rawdb", "github.com/tenderly/polygon-bor/ethdb/pebbledb"},
 	}
 	tc := new(build.GoToolchain)
 

@@ -6,11 +6,11 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/console"
-	"github.com/ethereum/go-ethereum/internal/cli/flagset"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/tenderly/polygon-bor/cmd/utils"
+	"github.com/tenderly/polygon-bor/console"
+	"github.com/tenderly/polygon-bor/internal/cli/flagset"
+	"github.com/tenderly/polygon-bor/node"
+	"github.com/tenderly/polygon-bor/rpc"
 
 	"github.com/mitchellh/cli"
 )

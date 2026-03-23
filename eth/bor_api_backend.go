@@ -6,15 +6,15 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/bor"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/tenderly/polygon-bor"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/consensus/bor"
+	"github.com/tenderly/polygon-bor/core"
+	"github.com/tenderly/polygon-bor/core/rawdb"
+	"github.com/tenderly/polygon-bor/core/types"
+	"github.com/tenderly/polygon-bor/event"
+	"github.com/tenderly/polygon-bor/log"
+	"github.com/tenderly/polygon-bor/rpc"
 )
 
 const tipConfirmationOffset uint64 = 16

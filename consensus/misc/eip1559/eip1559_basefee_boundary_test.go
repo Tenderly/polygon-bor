@@ -21,8 +21,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/tenderly/polygon-bor/core/types"
+	"github.com/tenderly/polygon-bor/params"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

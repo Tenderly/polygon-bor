@@ -22,8 +22,8 @@ import (
 
 	"github.com/holiman/uint256"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/rlp"
 )
 
 // DynamicFeeTx represents an EIP-1559 transaction.

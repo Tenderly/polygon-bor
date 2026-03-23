@@ -25,10 +25,10 @@ import (
 	"path/filepath"
 	"sync"
 
-	"github.com/ethereum/go-ethereum/common/lru"
-	"github.com/ethereum/go-ethereum/internal/era"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/tenderly/polygon-bor/common/lru"
+	"github.com/tenderly/polygon-bor/internal/era"
+	"github.com/tenderly/polygon-bor/log"
+	"github.com/tenderly/polygon-bor/rlp"
 )
 
 const openFileLimit = 64

@@ -1,9 +1,9 @@
 package wit
 
 import (
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/forkid"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/tenderly/polygon-bor/core"
+	"github.com/tenderly/polygon-bor/core/forkid"
+	"github.com/tenderly/polygon-bor/rlp"
 )
 
 // enrEntry is the ENR entry which advertises `wit` protocol on the discovery.

@@ -26,8 +26,8 @@ import (
 
 	"github.com/cloudflare/cloudflare-go"
 
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p/dnsdisc"
+	"github.com/tenderly/polygon-bor/log"
+	"github.com/tenderly/polygon-bor/p2p/dnsdisc"
 )
 
 var (

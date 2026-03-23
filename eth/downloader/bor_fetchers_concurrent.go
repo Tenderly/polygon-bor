@@ -21,11 +21,11 @@ import (
 	"sort"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/prque"
-	"github.com/ethereum/go-ethereum/eth/protocols/eth"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/common/prque"
+	"github.com/tenderly/polygon-bor/eth/protocols/eth"
+	"github.com/tenderly/polygon-bor/log"
+	"github.com/tenderly/polygon-bor/metrics"
 )
 
 // queueItemTimer returns the per-item download duration timer for the given queue type.

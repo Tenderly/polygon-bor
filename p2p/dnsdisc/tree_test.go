@@ -22,8 +22,8 @@ import (
 
 	"github.com/davecgh/go-spew/spew"
 
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/p2p/enode"
+	"github.com/tenderly/polygon-bor/common/hexutil"
+	"github.com/tenderly/polygon-bor/p2p/enode"
 )
 
 func TestParseRoot(t *testing.T) {

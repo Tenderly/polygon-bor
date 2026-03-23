@@ -22,15 +22,15 @@ import (
 	"math"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	cmath "github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/consensus/misc"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/tracing"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/tenderly/polygon-bor/common"
+	cmath "github.com/tenderly/polygon-bor/common/math"
+	"github.com/tenderly/polygon-bor/consensus/misc"
+	"github.com/tenderly/polygon-bor/core/state"
+	"github.com/tenderly/polygon-bor/core/tracing"
+	"github.com/tenderly/polygon-bor/core/types"
+	"github.com/tenderly/polygon-bor/core/vm"
+	"github.com/tenderly/polygon-bor/crypto"
+	"github.com/tenderly/polygon-bor/params"
 )
 
 const maxSystemCallRet = 64 << 20 // 64 MiB

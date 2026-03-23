@@ -3,7 +3,7 @@ package txpool
 import (
 	"testing"
 
-	"github.com/ethereum/go-ethereum/core"
+	"github.com/tenderly/polygon-bor/core"
 )
 
 // TestSubscribeRebroadcastTransactionsNilPool tests that calling

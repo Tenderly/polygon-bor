@@ -23,9 +23,9 @@ import (
 
 	bloomfilter "github.com/holiman/bloomfilter/v2"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/tenderly/polygon-bor/common"
+	"github.com/tenderly/polygon-bor/core/rawdb"
+	"github.com/tenderly/polygon-bor/log"
 )
 
 // stateBloomHash is used to convert a trie hash or contract code hash into a 64 bit mini hash.
